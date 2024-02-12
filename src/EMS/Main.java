@@ -23,7 +23,7 @@ public class Main {
         System.out.println(highSalaryEmployees);
 
         //using a consumer to print employee details;
-        Consumer<Employee> printDetails = employee -> employee.toString();
+        Consumer<Employee> printDetails = Employee::toString;
         ems.forEachEmployee(printDetails);
 
         //using a function to calculate bonus based on salary
